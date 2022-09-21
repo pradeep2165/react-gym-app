@@ -34,7 +34,7 @@ const Details = ({ exerciseDetail }) => {
         <Typography variant="h6">
           Exercise keep you strong. {name} is one of the best exercises to target your {target}. It will help you improve your mood and gain energy.
         </Typography>
-        {extraDetail.map((item) => (
+        {extraDetail.map((item, index) => (
           <Stack key={item.name} direction="row" gap="24px" alignItems="center">
             <Button sx={{ background: "#fff2db", borderRadius: "50%", width: "100px" }}>
               <img src={item.icon} alt="badyPart" style={{ width: "50px", height: "50px" }} />
