@@ -11,7 +11,6 @@ const ExerciseVideo = ({ exerciseVideos, name }) => {
       </Typography>
       <Stack justifyContent="flex-start" flexWrap="wrap" alignItems="center" sx={{ flexDirection: { lg: "row" }, gap: { lg: "110px", xs: "0" } }}>
         {exerciseVideos?.slice(0, 3).map((item, index) => {
-          console.log(item);
           return (
             <a key={index} className="exercise-video" href={`https://www.youtube.com/watch?v=${item.video.videoId}`} target="_blank" rel="noreferrer">
               <img src={item.video.thumbnails[0].url} alt={item.video.title} />
